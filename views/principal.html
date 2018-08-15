@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/principal.css">
+    <title>Hackaton</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="http://www.periodicopalacio.com/wp-content/uploads/2017/12/festivales-musica-galicia-verano-galleta-molona.jpg">
+                    </div>
+                    <a href="#user">
+                        <img class="circle" src="http://data.whicdn.com/images/11780878/blonde-cool-glasses-fashion-girl-iron-maiden-Favim.com-98992_large.jpg">
+                    </a>
+                    <a href="#name">
+                        <span class="white-text name">Juanita cool</span>
+                    </a>
+                    <a href="#email">
+                        <span id="email-perfil" class="white-text email">juanalacubana@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="festivales.html">Festivales</a>
+            </li>
+            <li>
+                <a href="#!">Agenda</a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!">Tus Festivales</a>
+            </li>
+            <li class="center-align">
+               <button id="logout" type="button" class="logout-button"  onclick="logOut()">Log Out</button>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Festival On!</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">
+                        <i class="material-icons left">search</i>Buscar</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <section id="#profile" class="container">
+        <div id="profileCard" class="card row">
+            <div class="userInfo col s12 l6">
+                <img id="chicacool" src="">
+            </div>
+            <div class="user-info col 6">
+                <p id="nombre-perfil" class="card-title"></p>
+                <div class="socials">
+                    <a href="">
+                        <i class="redesi fab fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="redesi2 fab fa-whatsapp-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Agenda-->
+        <h2 id="profheader" class="card">Eventos</h2>
+        <div class="input-field col s12">
+            <select id="optionSelect">
+                <option value="" disabled selected>Elige tú Ciudad</option>
+                <option value="1">Guadalajara</option>
+                <option value="2">Monterrey</option>
+                <option value="3">Ciudad de Mexico</option>
+            </select>
+        </div>
+        <div id="eventsgenerals"></div>
+
+        <!--Festival-->
+
+        <div id="template-content" class="card row agenda festInfo" style="display: none">
+            <div class="col event-card s12">
+                <img id="festivalPoster" src="{{img}}" alt="">
+                <br>
+                <a id="artista" onclick="rescueValueModal()" class="modal-trigger prueba" href="#modal1">{{eventName}}</a>
+                <p class="hide-on-med-and-down" id="nameEventsButton">{{eventId}}</p>
+                <p class="event-text">{{eventPlace}}</p>
+                <p class="event-text">{{date}}</p>
+                <button onclick="videos()">
+                    <i class="material-icons">ondemand_video</i>
+                </button>
+                <button id="favorite">
+                    <i class="material-icons">star</i>
+                </button>
+            </div>
+        </div>
+        <!--Festival-->
+        <div class="card row agenda">
+            <div class="col s6">
+                <img id="festivalPoster" src="../assets/image/poster2.jpg" alt="">
+            </div>
+            <div class="col s6">
+                <h5>Misteryland: 24 Octubre</h5>
+                <p class="event-text">Asisten:</p>
+                <p><i class="fas fa-user-friends"></i> Susana Moreno</p>
+                <p><i class="fas fa-user-friends"></i> Alejandro P.</p>
+                <p><i class="fas fa-user-friends"></i> Jorge Vargas</p>
+                <button>
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+        <!--Festival-->
+        <div class="card row agenda">
+            <div class="col s6">
+                <img id="festivalPoster" src="../assets/image/poster3.jpg" alt="">
+            </div>
+            <div class="col s6">
+                <h5>Sasquatch!: 11 Noviembre</h5>
+                <p class="event-text">Asisten</p>
+                <p><i class="fas fa-user-friends"></i> Luisa Rodriguez</p>
+                <p><i class="fas fa-user-friends"></i> Rodrigo Garcia</p>
+                <p><i class="fas fa-user-friends"></i> Luis Castro</p>
+                <button>
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+        <!--Modal MAS INFORMACION EVENTO-->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+
+                <div id="template-modal2" class="card row agenda festInfo">
+                    <div class="parrafos col s8">
+                        <p>{{eventName}}</p>
+                        <img id="festivalPoster" src="{{img}}" alt="">
+                        <p class="hide-on-med-and-down">{{eventId}}</p>
+                        <p>{{eventPlace}}</p>
+                        <p>{{date}}</p>
+                        <p>{{time}}</p>
+                        <p>{{info}}</p>
+                        <a id="comprar-boletos" href='{{url}}' about='_blank'>Comprar Boletos</a>
+                        <p>{{direction}}</p>
+                    </div>
+                    <div class="center-align">
+                        <button id="cancel-button-form" href="principal.html" class="modal-close waves-effect waves-green btn-flat">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Festival On! 2018 ©</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script type="text/javascript" src="../js/firebase.js"></script>
+    <script src="../js/principal.js"></script>
+</body>
+</html>

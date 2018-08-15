@@ -1,0 +1,149 @@
+
+/*nav*/
+nav .brand-logo {
+    text-shadow: 0px 0px 10px #000;
+    font-weight: bold;
+}
+
+.nav-wrapper{
+    background-color: #3c8978;
+}
+#profileCard{
+    background-image: url("http://significadosdelossuenos.net/wp-content/uploads/2017/09/So%C3%B1ar-con-concierto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* imagen del evento*/ 
+#festivalPoster {
+    width: 154px;
+    margin-top: 10px;
+    margin-left: 20px;
+   }
+   
+.card-title {
+    position: relative;
+    font-size: 30px;
+    color: #1176ad;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+
+   
+   div.userInfo.col.s6 {
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+   
+   .redesi {
+    font-size: 50px;
+    margin-right: 5px;
+   }
+
+   .redesi2 {
+    font-size: 50px;
+    color: green;
+   }
+   
+   #profheader {
+    background: linear-gradient(to bottom right, #00ccbb 0%, #005848 100%);
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    height: 45px;
+    padding-top: 6px;
+    padding-left: 14px;
+    margin-top: 30px;
+   }
+  
+   
+   /*Festival*/
+   
+   #festivalBackground {
+    width: 497px;
+    margin-top: -19px;
+   }
+   
+   #chicacool{
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    border-radius: 50%;
+}
+   
+   
+   .festInfo {
+   background-color: #181818;
+   }
+   
+   .card {
+    background-color: #ecefe3;
+   }
+
+   footer {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-align: center;
+   }
+
+   .socials{
+    position: absolute;
+    left: 30px;
+    bottom: -3px;
+    background: white;
+    padding: 5px 20px 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+
+   /*template eventos*/
+
+   #artista{
+       font-size:25px;
+       color: teal;
+       font-family: 'Anton', sans-serif;
+       text-decoration-line:underline;
+       text-align: center;
+   }
+
+   .event-text{
+       font-size: 15px;
+       font-family: 'Anton', sans-serif;
+       
+   }
+
+   .parrafos p{
+       text-align: justify;
+       font-size: 20px;
+       padding: 1em;
+   }
+
+   #comprar-boletos{
+       text-align: center;
+       margin-left: 20px;
+   }
+   
+#cancel-button-form{
+    background-color: teal;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.logout-button{
+    border: none;
+    color: white;
+    background-color: teal;
+    padding: 9px;
+    font-size: large;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.event-card {
+    background-color: #e6e5e5;
+    padding: 10px 46px;
+    border-radius: 10px;
+    margin: 24px 0;
+}
+

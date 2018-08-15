@@ -1,0 +1,7 @@
+#video-container {
+    padding: 40px 0;
+}
+
+#video-container iframe {
+    min-height: 400px;
+}

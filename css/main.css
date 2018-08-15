@@ -1,0 +1,93 @@
+/*splashscreen*/
+
+.intro {
+  background-image: url("../assets/image/splash.gif");
+  text-align: center;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+
+ }
+   
+   .mainLogo {
+    position: relative;
+    left: 0;
+    margin-top: 189px;
+    width: 79%;
+   }
+   
+   .loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #1a95b4;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translateX(-48%) translateY(80%);
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+   /*aqui termina vista splash*/
+
+.bg-login{
+    background-image: url("../assets/image/festival-musica.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+img.responsive-img{
+    max-width: 20%;
+  }
+ 
+  /*FORMATOS DEL LOGIN*/
+
+  main div form {
+    border: 3px solid #2992a7;
+    border-radius: 5%;
+    background-color: white;
+    margin: 100px;
+  }
+ 
+  header div img {
+    width: 80%;
+  }
+  .btn{
+    background-color:  #2992a7;
+  }
+  header h2{
+    font-family: 'Monoton', cursive;
+    font-size:30px;
+    color:#2992a7;
+  }
+  .format-image-claqueta{
+    margin-top: 1em;
+    max-width: 100%;
+  }
+ 
+  @media screen and (min-width:451px){
+     header h2{
+      font-family: 'Monoton', cursive;
+      font-size:50px;
+      color:#2992a7;
+      text-align: center;
+     }
+    }
+
+   
