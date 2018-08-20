@@ -1,5 +1,6 @@
 # Festival-On
 
+FestivalOn es una Aplicación Mobile en donde podrás encontrar los eventos culturales que se estarán presentando en tu ciudad( Guadalajara, Monterrey, Cd .de México), haciendo uso de las Apis de Ticketmaster y Youtube para la obtención de los datos. 
 
 ![image](https://user-images.githubusercontent.com/37425706/44371103-d92c0c80-a4a2-11e8-8c4c-ce1b09ba1fd8.png)
 
