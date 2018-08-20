@@ -4,6 +4,12 @@ FestivalOn es una Aplicación Mobile en donde podrás encontrar los eventos cult
 
 ![image](https://user-images.githubusercontent.com/37425706/44371103-d92c0c80-a4a2-11e8-8c4c-ce1b09ba1fd8.png)
 
+![image](https://user-images.githubusercontent.com/37425706/44371193-5c4d6280-a4a3-11e8-9fe3-9b9da3079fe0.png)
+
+# Elaborado para.
+LABORATORIA
+
+
 # Festival de música.
 
 Un festival de música es un tipo de festival o evento social que trata de aglutinar una gran cantidad de conciertos de música durante varios días y generalmente del mismo género musical, de este modo los asistentes al festival pueden pasar varios días disfrutando de música en directo. En estos festivales se suelen realizar otras actividades alternativas relacionadas con la música.
