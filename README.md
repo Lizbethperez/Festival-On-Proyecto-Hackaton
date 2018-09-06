@@ -6,8 +6,7 @@ FestivalOn es una Aplicación Mobile en donde podrás encontrar los eventos cult
 
 ![image](https://user-images.githubusercontent.com/37425706/44371193-5c4d6280-a4a3-11e8-9fe3-9b9da3079fe0.png)
 
-# Elaborado para.
-LABORATORIA
+## Desarrollado para [Laboratoria](http://laboratoria.la)
 
 
 # Festival de música.
